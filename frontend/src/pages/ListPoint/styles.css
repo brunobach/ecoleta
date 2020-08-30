@@ -1,0 +1,190 @@
+#page-list-point {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+#page-list-point header {
+    margin-top: 48px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page-list-point header img {
+    display: flex;
+    align-items: center;
+}
+#list-view {
+    display: flex;
+    justify-content: space-between;
+
+}
+#list-view aside {
+    margin-right: 20px;
+}
+#list-view li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  list-style: none;
+}
+#list-view li p:hover{
+  cursor: pointer;
+  background-color: rgb(153, 153, 153);
+}
+#list-view li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+}
+#list-view li p {
+  width: 100%;
+  height: 50px;
+  padding-top: 5%;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+
+  background-color: rgb(221, 221, 221);
+}
+#list-point {
+    padding-top: 5px;
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #28bb7e, #115a3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #28bb7e, #115a3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    height: 70vh;
+    width: 15vw;
+}
+
+
+#list-view fieldset {
+    width: 50vw;
+    border: 0;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 80vh;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+#map-list {
+    border-radius: 10px;
+    height: 80vh;
+    width: 80vh;
+}
+#page-list-point .content a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  
+    margin-top: 20px;
+  }
+  #page-list-point .content a span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  #page-list-point .content a span svg {
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+  }
+  
+  #page-list-point .content a strong {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  #page-list-point .content  a:hover {
+    background: #2FB86E;
+  }
+
+  #page-list-point header a {
+    color: var(--title-color);
+    font-weight: bold;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  #page-list-point header a svg {
+    margin-right: 16px;
+    color: var(--primary-color);
+  }
+
+  @media(max-width: 900px) {
+    #page-list-point .content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    #page-list-point header {
+      margin-left: 70px;
+      margin-right: 30px;
+    }
+  
+    #page-list-point #list-point {
+      margin-left: 30px;
+      width: 30vw;
+    }
+  
+    #page-list-point .content a {
+      margin-left: 30px;
+      width: 30vw;
+    }
+  
+    #page-list-point .leaflet-container  {
+      width: 60vw;
+      margin-right: 30px;
+    }
+  }
+
+  @media(max-width: 1560px) {
+    #page-list-point .content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    #page-list-point header {
+      margin-left: 70px;
+      margin-right: 30px;
+    }
+  
+    #page-list-point #list-point {
+      margin-left: 30px;
+      width: 20vw;
+    }
+  
+    #page-list-point .content a {
+      margin-left: 30px;
+      width: 20vw;
+    }
+  
+    #page-list-point .leaflet-container  {
+      width: 63vw;
+    }
+  }
